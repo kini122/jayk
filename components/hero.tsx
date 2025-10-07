@@ -6,9 +6,7 @@ export function Hero() {
       {/* full-bleed hero image */}
       <div className="relative h-[360px] md:h-[520px] lg:h-[560px]">
         <img
-          src={`/.jpg?height=1120&width=1920&query=${encodeURIComponent(
-            "black and white portrait close up face on right side"
-          )}`}
+          src="/placeholder.svg"
           alt="Black and white portrait facing right"
           className="absolute inset-0 h-full w-full object-cover"
         />
