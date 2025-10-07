@@ -50,7 +50,11 @@ export function SiteHeader() {
       <nav
         id="mobile-navigation"
         aria-label="Primary"
-        className={`${isMenuOpen ? "block" : "hidden"} md:hidden border-t border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80`}
+        className={
+          isMenuOpen
+            ? "block border-t border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 md:hidden"
+            : "hidden border-t border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 md:hidden"
+        }
       >
         <ul className="flex flex-col gap-3 px-4 py-4">
           {links.map((link) => (
