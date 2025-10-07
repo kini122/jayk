@@ -2,7 +2,7 @@
 
 export function Hero() {
   return (
-    <section id="home" className="relative">
+    <section id="home" className="relative scroll-mt-24 md:scroll-mt-28">
       {/* full-bleed hero image */}
       <div className="relative h-[360px] md:h-[520px] lg:h-[560px]">
         <img
