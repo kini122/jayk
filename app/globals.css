@@ -119,7 +119,7 @@
 
 /* Utility: balanced headings and section spacing */
 .section {
-  @apply py-12 md:py-16;
+  @apply py-12 md:py-16 scroll-mt-24 md:scroll-mt-28;
 }
 .section-muted {
   @apply bg-muted/60;

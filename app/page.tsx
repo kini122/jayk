@@ -7,7 +7,7 @@ import { Contact } from "@/components/sections/contact"
 
 export default function Page() {
   return (
-    <main>
+    <main className="pt-24 md:pt-28">
       <SiteHeader />
       <Hero />
       <AvailableArtworks />

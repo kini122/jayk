@@ -75,7 +75,7 @@ export function AvailableArtworks() {
             {artworks.map((a) => (
               <article key={`${a.title}-${a.size}`} className="group bg-muted/80 p-3 rounded-md">
                 <img
-                  src={a.imageUrl ?? `/.jpg?height=360&width=540&query=${encodeURIComponent(a.placeholderQuery)}`}
+                  src={a.imageUrl ?? '/placeholder.svg'}
                   alt={a.alt}
                   className="w-full h-48 object-cover rounded-sm bg-muted"
                 />
