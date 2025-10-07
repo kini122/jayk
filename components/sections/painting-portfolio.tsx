@@ -57,8 +57,8 @@ export function PaintingPortfolio() {
         <h2 className="font-serif text-3xl md:text-4xl tracking-tight text-center">Painting Portfolio</h2>
         <div className="mt-8 flex justify-center">
           <div className="grid w-full max-w-4xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {items.map((it) => (
-              <article key={it.title} className="group bg-muted/80 p-3 rounded-md">
+            {items.map((it, idx) => (
+              <article key={it.imageUrl ?? `${it.title}-${idx}`} className="group bg-muted/80 p-3 rounded-md">
                 <img
                   src={it.imageUrl}
                   alt={it.alt}
